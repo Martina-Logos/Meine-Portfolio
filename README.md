@@ -17,8 +17,10 @@ This redesign focuses on:
 portfolio/
 ├── index.html          # Main portfolio page (single-page design)
 ├── contact.html        # Standalone contact page
+├── success.html        # Form success page (for deployed version)
 ├── style.css           # All styles with CSS variables
 ├── script.js           # JavaScript for interactivity
+├── favicon.png         # Your "Logos Intelligence" favicon
 ├── images/             # Your images folder
 │   └── Boss_lady.png   # Your profile image
 └── README.md           # This file
@@ -150,13 +152,20 @@ Adjust section padding in CSS variables:
 
 ## 🔗 Contact Form Setup (Netlify Forms)
 
-Your contact form is **already configured** to work with Netlify! Here's what happens:
+Your contact form is **already configured** to work with Netlify!
 
-### **How It Works:**
-1. Someone fills out your contact form
-2. Netlify automatically captures the submission
-3. You get an email notification with their message
-4. They see a success page confirming their message was sent
+### **Important: Local Testing vs Deployed**
+
+**When Testing Locally:**
+- The form will show a "This page isn't working" error when submitted
+- This is **normal** - Netlify Forms only work when deployed
+- Your form data won't be captured locally
+
+**When Deployed to Netlify:**
+- Forms work perfectly
+- You receive email notifications
+- Form submissions are saved in your Netlify dashboard
+- Users see a success message
 
 ### **Setup Steps (5 minutes):**
 
@@ -277,3 +286,4 @@ This portfolio template is free to use and modify for your personal portfolio.
 ---
 
 **Need help?** Feel free to reach out or open an issue!
+
