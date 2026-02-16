@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with Martina Namutebi for project collaborations and opportunities"
+    />
+    <title>Contact Me | Martina Namutebi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">MARTINA</a>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="contact-hero-content">
+          <span class="section-label">Get In Touch</span>
+          <h1 class="section-title">Let's Create Something Amazing Together</h1>
+          <p class="hero-subtitle">
+            Have a project in mind? Looking for a developer to join your team?
+            I'd love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Main -->
+    <section class="contact-main">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info-section">
+            <h2>Ways to Reach Me</h2>
+            <p class="contact-description">
+              Whether you prefer email, social media, or the contact form, I'm
+              here and ready to discuss your next project. I typically respond
+              within 24 hours.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value">martinanamutebi@gmail.com</span>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                <div>
+                  <span class="contact-label">LinkedIn</span>
+                  <span class="contact-value"
+                    >linkedin.com/in/martina-namutebi</span
+                  >
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <span class="contact-label">GitHub</span>
+                  <span class="contact-value">github.com/Martina-Logos</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="availability">
+              <div class="status-indicator"></div>
+              <span>Currently available for freelance projects</span>
+            </div>
+
+            <div class="contact-cta-section">
+              <h3>What I Can Help With</h3>
+              <ul class="services-list">
+                <li><i class="fas fa-check"></i> Full-stack web development</li>
+                <li>
+                  <i class="fas fa-check"></i> Frontend UI/UX implementation
+                </li>
+                <li><i class="fas fa-check"></i> Backend API development</li>
+                <li>
+                  <i class="fas fa-check"></i> Website redesigns & modernization
+                </li>
+                <li><i class="fas fa-check"></i> Technical consulting</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <form
+              class="contact-form"
+              name="contact-full"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              action="/success.html"
+            >
+              <!-- Hidden field for spam protection -->
+              <input type="hidden" name="form-name" value="contact-full" />
+              <p style="display: none">
+                <label
+                  >Don't fill this out if you're human: <input name="bot-field"
+                /></label>
+              </p>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Alex Tee"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="alex@example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  placeholder="Project Inquiry"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="budget">Project Budget (Optional)</label>
+                <select id="budget" name="budget">
+                  <option value="">Select a range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-plus">$25,000+</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="timeline">Project Timeline (Optional)</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select a timeline</option>
+                  <option value="urgent">Urgent (1-2 weeks)</option>
+                  <option value="short">Short-term (1 month)</option>
+                  <option value="medium">Medium-term (2-3 months)</option>
+                  <option value="long">Long-term (3+ months)</option>
+                  <option value="ongoing">Ongoing support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Tell me about your project, goals, and how I can help..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>MARTINA</h3>
+            <p>Crafting digital experiences with purpose</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Connect</h4>
+              <ul>
+                <li>
+                  <a href="https://github.com/Martina-Logos" target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://linkedin.com/in/martina-namutebi"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a href="mailto:martinanamutebi@gmail.com">Email</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Martina Namutebi. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
